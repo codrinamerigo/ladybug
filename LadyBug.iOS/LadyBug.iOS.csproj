@@ -65,6 +65,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\FontAwesome5Brands.otf" />
+    <BundleResource Include="Resources\FontAwesome5Regular.otf" />
+    <BundleResource Include="Resources\FontAwesome5Solid.otf" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

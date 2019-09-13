@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -70,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\FontAwesome5Brands.otf" />
+    <AndroidAsset Include="Assets\FontAwesome5Regular.otf" />
+    <AndroidAsset Include="Assets\FontAwesome5Solid.otf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -107,5 +110,5 @@
       <Name>LadyBug</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

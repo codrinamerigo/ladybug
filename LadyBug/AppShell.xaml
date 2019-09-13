@@ -32,7 +32,7 @@
 
     <!--  Your Pages  -->
     <TabBar>
-        <Tab Title="Home" Icon="tab_feed.png">
+        <Tab Title="Home" Icon="tab_feed.png" >
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
         <Tab Title="Enciclopedia" Icon="tab_about.png">
