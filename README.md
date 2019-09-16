@@ -4,5 +4,7 @@ Simple Xamarin Forms app using shell and basic features as login, search, carous
 
 Used to create UI Test.
 
-### This sample app uses [Font Awesome](https://fontawesome.com/) for the icons.
-### Logo is courtesy of Amy
+## Credits
+
+#### This sample app uses [Font Awesome](https://fontawesome.com/) for the icons.
+#### Logo is courtesy of Amy.
