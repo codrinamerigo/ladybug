@@ -23,7 +23,7 @@
                 <Setter Property="Shell.UnselectedColor" Value="Gray" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#c0c0c0" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="Gray" />
                 <Setter Property="Shell.TabBarTitleColor" Value="White" />
             </Style>
             <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" />
