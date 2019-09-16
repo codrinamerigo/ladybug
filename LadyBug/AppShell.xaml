@@ -14,16 +14,16 @@
     -->
     <Shell.Resources>
         <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color>
+            <Color x:Key="NavigationPrimary">#8b0000</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.DisabledColor" Value="#a6a6a6" />
+                <Setter Property="Shell.UnselectedColor" Value="#c0c0c0" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#c0c0c0" />
                 <Setter Property="Shell.TabBarTitleColor" Value="White" />
             </Style>
             <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" />
@@ -38,7 +38,7 @@
         <Tab Title="Enciclopedia" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-        <Tab Title="SEarch" Icon="tab_about.png">
+        <Tab Title="My bugs" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
         <Tab Title="Profile" Icon="tab_about.png">

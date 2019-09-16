@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<pages1:PageBase
     x:Class="LadyBug.Views.LoginPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Utils="clr-namespace:LadyBug.Utils"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages1="clr-namespace:LadyBug.Helpers"
     mc:Ignorable="d">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" HorizontalOptions="Center">
@@ -66,12 +67,16 @@
                                 TextColor="DarkRed" />
                             <Entry
                                 x:Name="UserNameBox"
-                                Margin="0,5,40,0"
+                                Margin="-5,5,40,0"
                                 AutomationId="UserNameBox"
                                 BackgroundColor="White"
+                                BindingContext="{Binding LoginModel}"
                                 Focused="UserNameBox_Focused"
                                 FontSize="16"
+                                Placeholder="username"
+                                PlaceholderColor="LightGray"
                                 ReturnType="Next"
+                                Text="{Binding User, Mode=TwoWay}"
                                 TextColor="Black"
                                 WidthRequest="220" />
 
@@ -85,7 +90,7 @@
                         </StackLayout>
                     </Grid>
 
-                    <Grid Grid.Row="2" Margin="21,20,10,10">
+                    <Grid Grid.Row="2" Margin="21,10,10,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="24" />
                             <ColumnDefinition />
@@ -103,12 +108,16 @@
                                 TextColor="DarkRed" />
                             <Entry
                                 x:Name="PasswordBox"
-                                Margin="0,5,40,0"
+                                Margin="-5,5,40,0"
                                 AutomationId="PasswordBox"
                                 BackgroundColor="White"
+                                BindingContext="{Binding LoginModel}"
                                 Focused="PasswordBox_Focused"
                                 FontSize="16"
                                 IsPassword="True"
+                                Placeholder="password"
+                                PlaceholderColor="LightGray"
+                                Text="{Binding Password, Mode=TwoWay}"
                                 WidthRequest="220" />
 
                             <StackLayout.GestureRecognizers>
@@ -128,6 +137,7 @@
                         Margin="0,20,0,0"
                         AutomationId="LoginButton"
                         BackgroundColor="DarkRed"
+                       Clicked="LoginButton_Clicked"
                         CornerRadius="0"
                         FontSize="24"
                         HeightRequest="30"
@@ -138,4 +148,4 @@
 
         </StackLayout>
     </ContentPage.Content>
-</ContentPage>
+</pages1:PageBase>
