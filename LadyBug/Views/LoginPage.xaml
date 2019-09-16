@@ -35,14 +35,14 @@
                     x:Name="LoginBox"
                     Grid.Row="1"
                     BackgroundColor="White"
-                    HeightRequest="317"
+                    HeightRequest="380"
                     HorizontalOptions="Center"
                     WidthRequest="560">
                     <Grid.RowDefinitions>
                         <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="60" />
                     </Grid.RowDefinitions>
 
                     <Grid Grid.Row="0" Margin="21,20,10,10">
@@ -53,6 +53,7 @@
 
                         <Label
                             Grid.Row="1"
+                            Margin="0,3,0,0"
                             FontFamily="{StaticResource FontAwesomeSolid}"
                             Text="&#xf007;"
                             TextColor="DarkRed" />
@@ -63,7 +64,7 @@
                             Margin="5,0,0,0">
                             <Label
                                 FontSize="14"
-                                Text="Username"
+                                Text="username"
                                 TextColor="DarkRed" />
                             <Entry
                                 x:Name="UserNameBox"
@@ -90,13 +91,14 @@
                         </StackLayout>
                     </Grid>
 
-                    <Grid Grid.Row="2" Margin="21,10,10,10">
+                    <Grid Grid.Row="2" Margin="21,-40,10,10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="24" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
 
                         <Label
+                            Margin="0,3,0,0"
                             FontFamily="{StaticResource FontAwesomeSolid}"
                             Text="&#xf084;"
                             TextColor="DarkRed" />
@@ -104,7 +106,7 @@
                             <Label
                                 FontFamily="SourceSansPro-Bold"
                                 FontSize="14"
-                                Text="Password"
+                                Text="password"
                                 TextColor="DarkRed" />
                             <Entry
                                 x:Name="PasswordBox"
@@ -134,15 +136,18 @@
                     <Button
                         x:Name="LoginButton"
                         Grid.Row="3"
-                        Margin="0,20,0,0"
+                        Margin="55,0,55,0"
                         AutomationId="LoginButton"
-                        BackgroundColor="DarkRed"
-                       Clicked="LoginButton_Clicked"
+                        BackgroundColor="white"
+                        BorderColor="DarkRed"
+                        BorderWidth="1"
+                        Clicked="LoginButton_Clicked"
                         CornerRadius="0"
                         FontSize="24"
                         HeightRequest="30"
+                        Pressed="LoginButton_Pressed"
                         Text="Login"
-                        TextColor="White" />
+                        TextColor="DarkRed" />
                 </Grid>
             </Grid>
 

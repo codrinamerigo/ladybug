@@ -51,8 +51,17 @@ namespace LadyBug.Views
 
         private void LoginButton_Clicked(object sender, EventArgs e)
         {
+
+            LoginButton.TextColor = Color.White;
+            LoginButton.BackgroundColor = Color.DarkRed;
             //demo purpose only
             App.Current.MainPage = new AppShell();
+        }
+
+        private void LoginButton_Pressed(object sender, EventArgs e)
+        {
+            LoginButton.TextColor = Color.White;
+            LoginButton.BackgroundColor = Color.DarkRed;
         }
     }
 }

@@ -20,7 +20,7 @@
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#a6a6a6" />
-                <Setter Property="Shell.UnselectedColor" Value="#c0c0c0" />
+                <Setter Property="Shell.UnselectedColor" Value="Gray" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White" />
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#c0c0c0" />
@@ -30,18 +30,32 @@
         </ResourceDictionary>
     </Shell.Resources>
 
+
+
     <!--  Your Pages  -->
     <TabBar>
-        <Tab Title="Home" Icon="tab_feed.png">
+        <Tab Title="Home">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf015;" />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
-        <Tab Title="Enciclopedia" Icon="tab_about.png">
+        <Tab Title="My Bugs">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf188;" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        </Tab>
+        <Tab Title="Glossary">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf518;" />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-        <Tab Title="My bugs" Icon="tab_about.png">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
-        </Tab>
-        <Tab Title="Profile" Icon="tab_about.png">
+        <Tab Title="Profile">
+            <Tab.Icon>
+                <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf007;" />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </TabBar>
