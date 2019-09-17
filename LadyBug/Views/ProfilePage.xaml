@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LadyBug.Views.AboutPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:LadyBug.ViewModels"
+    Title="{Binding Title}"
+    mc:Ignorable="d">
+
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#8B0000</Color>
+            <Color x:Key="Accent">#8B0000</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            BackgroundColor="{StaticResource Accent}"
+            HorizontalOptions="Fill"
+            VerticalOptions="FillAndExpand">
+            <StackLayout
+                BackgroundColor="DarkRed"
+                HorizontalOptions="Center"
+                Orientation="Horizontal"
+                VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image
+                        BackgroundColor="DarkRed"
+                        HeightRequest="64"
+                        Source="xamarin_logo.png"
+                        VerticalOptions="Center" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout
+                Padding="16,40,16,40"
+                Orientation="Vertical"
+                Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span
+                                    FontAttributes="Bold"
+                                    FontSize="22"
+                                    Text="LadyBug Demo App" />
+                                <Span Text=" " />
+                                <Span ForegroundColor="{StaticResource LightTextColor}" Text="1.0" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="This app is written in C# and native APIs " />
+                                <Span Text="using the" />
+                                <Span Text=" " />
+                                <Span FontAttributes="Bold" Text="Xamarin Platform" />
+                                <Span Text="." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="It shares code with " />
+                                <Span Text=" " />
+                                <Span FontAttributes="Bold" Text="iOS, Android, and Windows" />
+                                <Span Text=" " />
+                                <Span Text="versions." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="It uses" />
+                                <Span Text=" " />
+                                <Span FontAttributes="Bold" Text="Font Awesome" />
+                                <Span Text=" " />
+                                <Span Text="as icons." />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button
+                    Margin="0,10,0,0"
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding OpenWebCommand}"
+                    Text="Follow me"
+                    TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
