@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages1:PageBase
+    x:Class="LadyBug.Views.GlossaryPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages1="clr-namespace:LadyBug.Helpers"
+    mc:Ignorable="d">
+    <pages1:PageBase.Resources />
+    <pages1:PageBase.Content>
+        <StackLayout>
+            <Label
+                Margin="10,30,10,10"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                TextColor="DarkRed">
+                Glossary
+            </Label>
+
+            <Label
+                Margin="10,30,10,10"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                TextColor="DarkRed">
+                Choose a category to find more
+            </Label>
+            <Grid Margin="15" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="1" />
+                    <RowDefinition Height="90" />
+                    <RowDefinition Height="1" />
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="1" />
+                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="1" />
+                </Grid.ColumnDefinitions>
+
+                <BoxView
+                    Grid.Row="0"
+                    Grid.ColumnSpan="7"
+                    BackgroundColor="DarkRed"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="End" />
+
+                <BoxView
+                    Grid.Row="2"
+                    Grid.ColumnSpan="7"
+                    BackgroundColor="DarkRed"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="End" />
+
+                <BoxView
+                    Grid.Row="4"
+                    Grid.ColumnSpan="7"
+                    BackgroundColor="DarkRed"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="End" />
+
+                <BoxView
+                    Grid.Row="6"
+                    Grid.ColumnSpan="7"
+                    BackgroundColor="DarkRed"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="End" />
+
+                <BoxView
+                    Grid.RowSpan="7"
+                    Grid.Column="0"
+                    BackgroundColor="DarkRed"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="1" />
+
+                <BoxView
+                    Grid.RowSpan="7"
+                    Grid.Column="2"
+                    BackgroundColor="DarkRed"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="1" />
+
+                <BoxView
+                    Grid.RowSpan="7"
+                    Grid.Column="4"
+                    BackgroundColor="DarkRed"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="1" />
+
+                <BoxView
+                    Grid.RowSpan="7"
+                    Grid.Column="6"
+                    BackgroundColor="DarkRed"
+                    HorizontalOptions="FillAndExpand"
+                    WidthRequest="1" />
+
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Spiders" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Beetle" />
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="1">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Butterflies" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="3">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Bees and co" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="3">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Fies" />
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="3">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Dragonflies" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="5">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Pests" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="5">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Cockroaches" />
+                </Grid>
+
+                <Grid Grid.Row="5" Grid.Column="5">
+                    <Label Style="{StaticResource GlossaryItem}" Text="Others" />
+                </Grid>
+
+
+            </Grid>
+        </StackLayout>
+    </pages1:PageBase.Content>
+</pages1:PageBase>

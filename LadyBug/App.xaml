@@ -23,5 +23,11 @@
                 <On Platform="iOS" Value="FontAwesome5Free-Regular" />
             </OnPlatform>
         </ResourceDictionary>
+        <Style x:Key="GlossaryItem" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="End" />
+            <Setter Property="TextColor" Value="DarkRed" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
     </Application.Resources>
 </Application>

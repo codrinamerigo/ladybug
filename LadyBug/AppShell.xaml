@@ -7,6 +7,7 @@
     xmlns:local="clr-namespace:LadyBug.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="LadyBug"
+    NavigationPage.HasNavigationBar="False"
     mc:Ignorable="d">
 
     <!--
@@ -50,13 +51,13 @@
             <Tab.Icon>
                 <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf518;" />
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:GlossaryPage}" />
         </Tab>
         <Tab Title="Profile">
             <Tab.Icon>
                 <FontImageSource FontFamily="{StaticResource FontAwesomeSolid}" Glyph="&#xf007;" />
             </Tab.Icon>
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:ProfilePage}" />
         </Tab>
     </TabBar>
 

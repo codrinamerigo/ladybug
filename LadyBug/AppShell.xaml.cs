@@ -10,6 +10,7 @@ namespace LadyBug
         public AppShell()
         {
             InitializeComponent();
+            Shell.SetNavBarIsVisible(this, false);
         }
     }
 }
