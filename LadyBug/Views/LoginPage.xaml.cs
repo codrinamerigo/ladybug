@@ -62,9 +62,9 @@ namespace LadyBug.Views
         {
             LoginButton.TextColor = Color.White;
             LoginButton.BackgroundColor = Color.DarkRed;
+
+
         }
 
-        
-        
     }
 }
