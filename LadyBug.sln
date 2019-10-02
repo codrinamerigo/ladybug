@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadyBug.Android", "LadyBug.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadyBug.iOS", "LadyBug.iOS\LadyBug.iOS.csproj", "{8103AA82-E490-42EE-9928-C01C0477DD25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LadyBug", "LadyBug\LadyBug.csproj", "{0C581903-FCF3-417A-866A-585BF8BF1F6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LadyBug", "LadyBug\LadyBug.csproj", "{0C581903-FCF3-417A-866A-585BF8BF1F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest", "UITest\UITest.csproj", "{77E4B497-3D1B-4593-8791-5B0FCDBCA420}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +75,18 @@ Global
 		{0C581903-FCF3-417A-866A-585BF8BF1F6E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{0C581903-FCF3-417A-866A-585BF8BF1F6E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{0C581903-FCF3-417A-866A-585BF8BF1F6E}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|iPhone.Build.0 = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{77E4B497-3D1B-4593-8791-5B0FCDBCA420}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
