@@ -22,10 +22,7 @@
                         <RowDefinition Height="100" />
                     </Grid.RowDefinitions>
 
-                    <Image
-                        Grid.Row="0"
-                        HorizontalOptions=""
-                        Source="icon.png" />
+                    <Image Grid.Row="0" Source="icon.png" />
 
                     <!--<Label
                         Grid.Row="0"
