@@ -24,7 +24,7 @@
 
                     <Image
                         Grid.Row="0"
-                        HorizontalOptions="Center"
+                        HorizontalOptions=""
                         Source="icon.png" />
 
                     <!--<Label

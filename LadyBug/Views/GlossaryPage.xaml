@@ -23,32 +23,30 @@
                 FontSize="18"
                 HorizontalTextAlignment="Center"
                 TextColor="DarkRed">
-                Choose a category to find more
+                Choose a category to find more:
             </Label>
             <Grid Margin="15" HorizontalOptions="Center">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1" />
-                    <RowDefinition Height="90" />
+                    <RowDefinition Height="110" />
                     <RowDefinition Height="1" />
-                    <RowDefinition Height="90" />
+                    <RowDefinition Height="110" />
                     <RowDefinition Height="1" />
-                    <RowDefinition Height="90" />
-                    <RowDefinition Height="1" />
+
 
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1" />
-                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="110" />
                     <ColumnDefinition Width="1" />
-                    <ColumnDefinition Width="90" />
+                    <ColumnDefinition Width="110" />
                     <ColumnDefinition Width="1" />
-                    <ColumnDefinition Width="90" />
-                    <ColumnDefinition Width="1" />
+
                 </Grid.ColumnDefinitions>
 
                 <BoxView
                     Grid.Row="0"
-                    Grid.ColumnSpan="7"
+                    Grid.ColumnSpan="5"
                     BackgroundColor="DarkRed"
                     HeightRequest="1"
                     HorizontalOptions="FillAndExpand"
@@ -56,7 +54,7 @@
 
                 <BoxView
                     Grid.Row="2"
-                    Grid.ColumnSpan="7"
+                    Grid.ColumnSpan="5"
                     BackgroundColor="DarkRed"
                     HeightRequest="1"
                     HorizontalOptions="FillAndExpand"
@@ -64,81 +62,48 @@
 
                 <BoxView
                     Grid.Row="4"
-                    Grid.ColumnSpan="7"
+                    Grid.ColumnSpan="5"
                     BackgroundColor="DarkRed"
                     HeightRequest="1"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="End" />
 
                 <BoxView
-                    Grid.Row="6"
-                    Grid.ColumnSpan="7"
-                    BackgroundColor="DarkRed"
-                    HeightRequest="1"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="End" />
-
-                <BoxView
-                    Grid.RowSpan="7"
+                    Grid.RowSpan="5"
                     Grid.Column="0"
                     BackgroundColor="DarkRed"
                     HorizontalOptions="FillAndExpand"
                     WidthRequest="1" />
 
                 <BoxView
-                    Grid.RowSpan="7"
+                    Grid.RowSpan="5"
                     Grid.Column="2"
                     BackgroundColor="DarkRed"
                     HorizontalOptions="FillAndExpand"
                     WidthRequest="1" />
 
                 <BoxView
-                    Grid.RowSpan="7"
+                    Grid.RowSpan="5"
                     Grid.Column="4"
                     BackgroundColor="DarkRed"
                     HorizontalOptions="FillAndExpand"
                     WidthRequest="1" />
 
-                <BoxView
-                    Grid.RowSpan="7"
-                    Grid.Column="6"
-                    BackgroundColor="DarkRed"
-                    HorizontalOptions="FillAndExpand"
-                    WidthRequest="1" />
 
                 <Grid Grid.Row="1" Grid.Column="1">
                     <Label Style="{StaticResource GlossaryItem}" Text="Spiders" />
+                    <Image />
                 </Grid>
 
                 <Grid Grid.Row="3" Grid.Column="1">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Beetle" />
-                </Grid>
-
-                <Grid Grid.Row="5" Grid.Column="1">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Butterflies" />
+                    <Label Style="{StaticResource GlossaryItem}" Text="Flies" />
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="3">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Bees and co" />
+                    <Label Style="{StaticResource GlossaryItem}" Text="Butterflies" />
                 </Grid>
 
                 <Grid Grid.Row="3" Grid.Column="3">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Fies" />
-                </Grid>
-
-                <Grid Grid.Row="5" Grid.Column="3">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Dragonflies" />
-                </Grid>
-
-                <Grid Grid.Row="1" Grid.Column="5">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Pests" />
-                </Grid>
-
-                <Grid Grid.Row="3" Grid.Column="5">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Cockroaches" />
-                </Grid>
-
-                <Grid Grid.Row="5" Grid.Column="5">
                     <Label Style="{StaticResource GlossaryItem}" Text="Others" />
                 </Grid>
 
