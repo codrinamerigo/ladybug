@@ -1,3 +1,3 @@
 # ladybug
 
-Playground for Xamarin.forms and UI Testing
+Playground for Xamarin.Forms and UI Testing
