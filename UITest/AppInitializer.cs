@@ -10,7 +10,10 @@ namespace UITest
         {
             if (platform == Platform.Android)
             {
-                return ConfigureApp.Android.StartApp();
+                return ConfigureApp
+                    .Android
+                    .ApkFile("C:/Users/User/source/repos/codrinamerigo/ladybug/LadyBug.Android/bin/Debug/com.companyname.ladybug.apk")
+                    .StartApp();
             }
 
             return ConfigureApp.iOS.StartApp();

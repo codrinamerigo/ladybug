@@ -8,7 +8,7 @@ using Xamarin.UITest.Queries;
 namespace UITest
 {
     [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
+    //[TestFixture(Platform.iOS)]
     public class Tests
     {
         IApp app;
@@ -37,6 +37,13 @@ namespace UITest
         public void ShouldBeAbleToSeeLoginPage()
         {
             Assert.True(true);
+        }
+
+
+        [Test]
+        public void Repl()
+        {
+            app.Repl();
         }
     }
 }
