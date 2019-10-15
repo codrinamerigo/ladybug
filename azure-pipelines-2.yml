@@ -1,5 +1,4 @@
 # Xamarin.Android
-
 # Build a Xamarin.Android project.
 # Add steps that test, sign, and distribute an app, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
@@ -8,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'macos-latest'
 
 variables:
   buildConfiguration: 'Release'
@@ -25,16 +24,17 @@ steps:
   inputs:
     projectFile: '**/*droid*.csproj'
     outputDirectory: '$(outputDirectory)'
-    configuration: '$(buildConfiguration)'
-
-- task: MSBuild@1
+- task: AppCenterTest@1
   inputs:
-    solution: '**/*UITest.csproj'
-    clean: true
+    appFile: '$(build.binariesDirectory)/$(buildConfiguration)'
+    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
+    frameworkOption: 'uitest'
+    uiTestBuildDirectory: 'LadyBug/UITest/bin/Release'
+    credentialsOption: 'serviceEndpoint'
+    serverEndpoint: 'app center'
+    appSlug: 'Cod-Org/LadyBug'
+    devices: 'Cod-Org/master'
+    localeOption: 'en_US'
 
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'NUnit'
-    testResultsFiles: '**/TEST-*.xml'
-    mergeTestResults: true
-    failTaskOnFailedTests: true
+
+    
