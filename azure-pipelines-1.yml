@@ -8,7 +8,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  vmImage: 'vs2017-win2016'
 
 variables:
   buildConfiguration: 'Release'
@@ -29,7 +29,7 @@ steps:
 
 - task: MSBuild@1
   inputs:
-    solution: 'LadyBug\UITest\UITest.csproj'
+    solution: '**/*UITest.csproj'
     clean: true
 
 - task: PublishTestResults@2
