@@ -23,15 +23,6 @@
                     </Grid.RowDefinitions>
 
                     <Image Grid.Row="0" Source="icon.png" />
-
-                    <!--<Label
-                        Grid.Row="0"
-                        FontFamily="{StaticResource FontAwesomeSolid}"
-                        FontSize="85"
-                        HorizontalTextAlignment="Center"
-                        Text="&#xf188;"
-                        TextColor="DarkRed"
-                        VerticalTextAlignment="Center" />-->
                 </Grid>
 
                 <Grid

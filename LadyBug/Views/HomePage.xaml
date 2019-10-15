@@ -19,6 +19,7 @@
                 Grid.Row="0"
                 Margin="20,20,0,0"
                 FontSize="30"
+                AutomationId="WelcomeBox"
                 HorizontalOptions="CenterAndExpand"
                 Text="Welcome Codrina !"
                 TextColor="DarkRed"
