@@ -25,18 +25,10 @@ namespace UITest
             app = AppInitializer.StartApp(platform);
         }
 
-        //[Test]
-        //public void WelcomeTextIsDisplayed()
-        //{
-        //    AppResult[] results = app.WaitForElement(c => c.Marked("Welcome"));
-        //    app.Screenshot("Welcome screen.");
-
-        //    Assert.IsTrue(results.Any());
-        //}
         [Test]
-        public void ShouldBeAbleToSeeLoginPage()
+        public void Repl()
         {
-            Assert.True(true);
+            app.Repl();
         }
         [Test]
         public void ShouldBeAbleToLogin()
@@ -50,9 +42,24 @@ namespace UITest
         }
 
         [Test]
-        public void Repl()
+        public void ShouldBeAbleToLogin()
         {
-            app.Repl();
-        }
+            //arrange
+            app.Tap("UserNameBox");
+            app.EnterText("codrina");
+            app.DismissKeyboard();
+            app.Tap("PasswordBox");
+            app.EnterText("password");
+
+            //act
+            app.Tap("LoginButton");
+
+            //Assert
+            bool result = app.Query(e => e.Marked("WelcomeBox")).Length > 0 ;
+            Assert.True(result);
+        } 
+
+
+        
     }
 }
