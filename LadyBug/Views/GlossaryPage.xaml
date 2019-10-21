@@ -6,6 +6,7 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages1="clr-namespace:LadyBug.Helpers"
+    BackgroundColor="White"
     mc:Ignorable="d">
     <pages1:PageBase.Resources />
     <pages1:PageBase.Content>
@@ -91,19 +92,23 @@
 
 
                 <Grid Grid.Row="1" Grid.Column="1">
+                    <Image Aspect="AspectFill" Source="spiderIcon.png" />
                     <Label Style="{StaticResource GlossaryItem}" Text="Spiders" />
-                    <Image />
+
                 </Grid>
 
                 <Grid Grid.Row="3" Grid.Column="1">
-                    <Label Style="{StaticResource GlossaryItem}" Text="Flies" />
+                    <Image Aspect="AspectFill" Source="beesIcon.png" />
+                    <Label Style="{StaticResource GlossaryItem}" Text="Bees" />
                 </Grid>
 
                 <Grid Grid.Row="1" Grid.Column="3">
+                    <Image Aspect="AspectFill" Source="butterflyIcon.png" />
                     <Label Style="{StaticResource GlossaryItem}" Text="Butterflies" />
                 </Grid>
 
                 <Grid Grid.Row="3" Grid.Column="3">
+                    <Image Aspect="AspectFit" Source="othersIcon.png" />
                     <Label Style="{StaticResource GlossaryItem}" Text="Others" />
                 </Grid>
 

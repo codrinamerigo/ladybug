@@ -5,37 +5,71 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BackgroundColor="#E5E5E5"
     mc:Ignorable="d">
     <ContentPage.Content>
         <StackLayout>
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
 
                 </Grid.RowDefinitions>
             </Grid>
             <Label
                 Grid.Row="0"
-                Margin="20,20,0,0"
+                Margin="0,40,0,0"
                 FontSize="30"
                 HorizontalOptions="CenterAndExpand"
                 Text="Welcome Codrina !"
-                TextColor="DarkRed"
-                VerticalOptions="StartAndExpand" />
+                TextColor="DarkRed" />
+
 
             <Frame
                 Grid.Row="1"
-                Margin="10,10,10,10"
-                BackgroundColor="LightGray"
+                Margin="10,30,10,40"
+                BackgroundColor="White"
                 CornerRadius="15">
-                <Label
-                    Margin="10,30,10,10"
-                    FontSize="30"
-                    HorizontalTextAlignment="Start"
-                    TextColor="DarkRed">
-                    Bug of the day
-                </Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.3*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <Image
+                        Aspect="AspectFill"
+                        Source="butterfly1.png"
+                        VerticalOptions="Start" />
+                    <Label
+                        Grid.Column="1"
+                        Margin="10,10,10,0"
+                        FontSize="30"
+                        TextColor="DarkRed">
+                        Bug of the day
+                    </Label>
+                    <Label
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Margin="10,-10,10,10"
+                        FontSize="20"
+                        TextColor="DarkRed">
+                        A new species of papilionid butterfly, officially named Papilio natewa, has been discovered on a Fijian island, bringing to three the total number of swallowtail butterflies known from the region. This is such a remarkable butterfly that scientists are wondering how it has gone unnoticed for so long.
+                    </Label>
+                    <Button
+                        Grid.Row="2"
+                        Grid.ColumnSpan="2"
+                        Margin="55,0,55,0"
+                        BackgroundColor="DarkRed"
+                        CornerRadius="0"
+                        FontSize="24"
+                        HeightRequest="30"
+                        Text="READ MORE"
+                        TextColor="White" />
+                </Grid>
 
             </Frame>
         </StackLayout>
