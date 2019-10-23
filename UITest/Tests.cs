@@ -31,10 +31,7 @@ namespace UITest
             app.Repl();
         }
         [Test]
-        public void ShouldBeAbleToLogin()
-        {
-            Assert.True(true);
-        }
+       
 
         public void ShouldBeAbleToNavigate()
         {

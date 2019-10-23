@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage NavigationPage.HasNavigationBar="false"
+<ContentPage
     x:Class="LadyBug.Views.ProfilePage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -7,6 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:LadyBug.ViewModels"
     Title="{Binding Title}"
+    NavigationPage.HasNavigationBar="false"
     mc:Ignorable="d">
 
     <ContentPage.BindingContext>
@@ -115,30 +116,8 @@
                     </Label.FormattedText>
                 </Label>
 
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="For graphics" />
-                                <Span Text=" " />
-                                <Span FontAttributes="Bold" Text="FlatIcon" />
 
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-                <Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <FormattedString.Spans>
-                                <Span Text="For graphics" />
-                                <Span Text=" " />
-                                <Span FontAttributes="Bold" Text="FlatIcon" />
 
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
 
                 <Label>
                     <Label.FormattedText>
@@ -146,7 +125,7 @@
                             <FormattedString.Spans>
                                 <Span Text="Icon courtesy of" />
                                 <Span Text=" " />
-                                <Span FontAttributes="Bold" Text="Amy <1" />
+                                <Span FontAttributes="Bold" Text="Amy &lt;1" />
 
                             </FormattedString.Spans>
                         </FormattedString>
@@ -157,6 +136,8 @@
                     Margin="0,10,0,0"
                     BackgroundColor="{StaticResource Primary}"
                     Command="{Binding OpenWebCommand}"
+                     FontSize="24"
+                     HeightRequest="30"
                     Text="Follow me"
                     TextColor="White" />
             </StackLayout>
