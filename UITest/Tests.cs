@@ -32,33 +32,32 @@ namespace UITest
             app.Query(e => e.All());
             app.Tap("LoginButton");
         }
-        [Test]
        
-
-        public void ShouldBeAbleToNavigate()
-        {
-            Assert.False(false);
-        }
-
         [Test]
         public void ShouldBeAbleToLogin()
         {
-            //arrange
+            //Arrange
+
             app.Tap("UserNameBox");
             app.EnterText("codrina");
             app.DismissKeyboard();
             app.Tap("PasswordBox");
             app.EnterText("password");
+            app.DismissKeyboard();
 
-            //act
+            //Act
             app.Tap("LoginButton");
 
             //Assert
-            bool result = app.Query(e => e.Marked("WelcomeBox")).Length > 0 ;
-            Assert.True(result);
-        } 
+            app.WaitForElement("WelcomeBox");
+            bool result = app.Query(e => e.Marked("WelcomeBox")).Any();
+
+            //Assert
+            Assert.IsTrue(result);
 
 
+
+        }
         
     }
 }
