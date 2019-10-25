@@ -12,7 +12,7 @@ namespace UITest
             {
                 return ConfigureApp
                     .Android
-                    .ApkFile("C:/Users/User/source/repos/codrinamerigo/ladybug/LadyBug.Android/bin/Debug/com.companyname.ladybug.apk")
+                    .ApkFile("C:/Users/cmerigo/source/repos/LadyBug/LadyBug.Android/bin/Release/com.companyname.ladybug.apk")
                     .StartApp();
             }
 

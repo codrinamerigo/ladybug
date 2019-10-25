@@ -29,6 +29,8 @@ namespace UITest
         public void Repl()
         {
             app.Repl();
+            app.Query(e => e.All());
+            app.Tap("LoginButton");
         }
         [Test]
        
