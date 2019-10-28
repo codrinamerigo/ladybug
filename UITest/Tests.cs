@@ -25,6 +25,54 @@ namespace UITest
             app = AppInitializer.StartApp(platform);
         }
 
+        #region Helpers
+        private void ScrollDown(string objectName)
+        {
+            bool scrool = true;
+            if (!string.IsNullOrEmpty(objectName))
+            {
+                scrool = !app.Query(e => e.Marked(objectName)).Any();
+            }
+
+            if (scrool)
+            {
+                if (this.platform == Platform.iOS)
+                {
+                    app.ScrollDown();
+
+                }
+                else
+                {
+                    app.ScrollDown(strategy: ScrollStrategy.Gesture);
+                }
+            }
+
+        }
+        private void ScrollUp(string objectName)
+        {
+            bool scrool = true;
+            if (!string.IsNullOrEmpty(objectName))
+            {
+                scrool = !app.Query(e => e.Marked(objectName)).Any();
+            }
+
+            if (scrool)
+            {
+                if (this.platform == Platform.iOS)
+                {
+                    app.ScrollUp();
+
+                }
+                else
+                {
+                    app.ScrollUp(strategy: ScrollStrategy.Gesture);
+                }
+            }
+
+        }
+        #endregion
+
+
         [Test]
         public void Repl()
         {
