@@ -37,5 +37,5 @@ the elements inside the DOM.*/
  app.Tap(c => c.WebView().Css("#element"));
  
  
- Feel free to contact me
- @_Codrina_
+ ##Added Helpers method for  scrolling
+ 
