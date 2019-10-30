@@ -39,3 +39,5 @@ the elements inside the DOM.*/
  
  # Added Helpers method for  scrolling
  
+ # Added WaitTimes into AppInitializer.cs
+ 
