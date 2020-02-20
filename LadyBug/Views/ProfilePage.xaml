@@ -83,7 +83,7 @@
                             <FormattedString.Spans>
                                 <Span Text="It shares code with " />
                                 <Span Text=" " />
-                                <Span FontAttributes="Bold" Text="iOS, Android, and Windows" />
+                                <Span FontAttributes="Bold" Text="iOS and Android" />
                                 <Span Text=" " />
                                 <Span Text="versions." />
                             </FormattedString.Spans>
@@ -136,8 +136,8 @@
                     Margin="0,10,0,0"
                     BackgroundColor="{StaticResource Primary}"
                     Command="{Binding OpenWebCommand}"
-                     FontSize="24"
-                     HeightRequest="30"
+                    FontSize="24"
+                    HeightRequest="60"
                     Text="Follow me"
                     TextColor="White" />
             </StackLayout>

@@ -74,15 +74,16 @@ namespace UITest
 
 
         [Test]
-        public void Repl()
+        public void OpenRepl()
         {
             app.Repl();
             app.Query(e => e.All());
-            app.Tap("LoginButton");
+
+           
         }
-       
+
         [Test]
-        public void ShouldBeAbleToLogin()
+        public void ShouldBeAbleToLoginIntoTheApp()
         {
             //Arrange
 
@@ -106,6 +107,6 @@ namespace UITest
 
 
         }
-        
+
     }
 }
