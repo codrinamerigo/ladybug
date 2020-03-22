@@ -9,10 +9,50 @@ namespace LadyBug.ViewModels
 {
     public class LoginViewModel : ViewModelBase
     {
+        readonly IAuthenticationService _authService;
+        private string userName;
+        private string password;
 
+        public string UserName
+        {
+            get
+            {
+                return userName;
+            }
+            set
+            {
+                if (userName != value)
+                {
+                    userName = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
-        private Command<LoginModel> _loginCommand;
-        public Command<LoginModel> LoginCommand
+        public string Password
+        {
+            get
+            {
+                return password;
+            }
+            set
+            {
+                if (password != value)
+                {
+                    password = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+        public LoginViewModel( IAuthenticationService authService)
+        {
+            _authService = authService;
+        }
+
+        private Command _loginCommand;
+
+        public Command LoginCommand
         {
             get => _loginCommand;
             set => SetProperty(ref _loginCommand, value);
@@ -21,16 +61,20 @@ namespace LadyBug.ViewModels
         {
             await Task.Run(() =>
             {
-                LoginCommand = new Command<LoginModel>(async model => ExecuteLoginCommand(model), CanExecuteLoginCommand);
+                LoginCommand = new Command(ExecuteLoginCommand,
+                    CanExecuteLoginCommand);
             });
         }
 
-        private bool CanExecuteLoginCommand(LoginModel arg)
+        private bool CanExecuteLoginCommand(object arg)
         {
-            return true;
+            if (UserName != null && Password != null)
+                return true;
+            else
+                return false;
         }
 
-        private void ExecuteLoginCommand(LoginModel loginModel)
+        private void ExecuteLoginCommand(object obj)
         {
             //tbt in case of apis
         }

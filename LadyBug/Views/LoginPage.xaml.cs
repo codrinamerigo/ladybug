@@ -24,9 +24,6 @@ namespace LadyBug.Views
         public LoginPage() 
         {
             InitializeComponent();
-
-            ViewModel = new LoginViewModel();
-            BindingContext = ViewModel;
         }
 
         private void UserNameBox_Focused(object sender, FocusEventArgs e)

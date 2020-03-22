@@ -18,14 +18,14 @@ namespace LadyBug.Views
     [DesignTimeVisible(false)]
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        //ItemsViewModel viewModel;
 
         public ItemsPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
 
-            BindingContext = viewModel = new ItemsViewModel();
+            //BindingContext = viewModel = new ItemsViewModel();
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -34,7 +34,7 @@ namespace LadyBug.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
+            //await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;
@@ -49,8 +49,8 @@ namespace LadyBug.Views
         {
             base.OnAppearing();
 
-            if (viewModel.Items.Count == 0)
-                viewModel.LoadItemsCommand.Execute(null);
+            //if (viewModel.Items.Count == 0)
+            //    viewModel.LoadItemsCommand.Execute(null);
         }
     }
 }
