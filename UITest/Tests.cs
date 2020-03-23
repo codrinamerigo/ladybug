@@ -73,18 +73,11 @@ namespace UITest
         #endregion
 
 
-        [Test]
-        public void OpenRepl()
-        {
-            
-            app.Repl();
-                   
-        }
 
         [Test]
-        public void ShouldBeAbleToLogin()
+        public void ShouldBeAbleTologin()
         {
-            //arrange 
+            //Arrange
             app.Tap("UserNameBox");
             app.EnterText("codrina");
             app.DismissKeyboard();
@@ -92,19 +85,28 @@ namespace UITest
             app.EnterText("password");
             app.DismissKeyboard();
 
-            //act
+            //Act
             app.Tap("LoginButton");
             app.WaitForElement("WelcomeBox");
 
-            //asset 
+            //Assert
             bool result = app.Query(e => e.Marked("WelcomeBox")).Any();
 
             Assert.IsTrue(result);
 
 
+        }
+
+
+        [Test]
+        public void OpenRepl()
+        {
+
+            app.Repl();
 
         }
-       
+
+
 
     }
 }

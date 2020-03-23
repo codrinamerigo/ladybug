@@ -21,6 +21,8 @@ namespace NUnitTestProject
                 _vm = new LoginViewModel(loginMock);
             }
 
+
+
             [Test]
             public async Task Login_UsernameIsSet()
             {
