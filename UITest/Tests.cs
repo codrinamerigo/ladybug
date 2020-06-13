@@ -97,8 +97,6 @@ namespace UITest
 
         }
 
-
-        [Test]
         public void OpenRepl()
         {
 
