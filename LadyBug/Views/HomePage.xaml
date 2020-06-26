@@ -61,7 +61,7 @@
                         A new species of papilionid butterfly, officially named Papilio natewa, has been discovered on a Fijian island, bringing to three the total number of swallowtail butterflies known from the region. This is such a remarkable butterfly that scientists are wondering how it has gone unnoticed for so long.
                     </Label>
                     <Button
-                        Grid.Row="2"
+                        Grid.Row="2" 
                         Grid.ColumnSpan="2"
                         Margin="55,0,55,0"
                         BackgroundColor="DarkRed"
